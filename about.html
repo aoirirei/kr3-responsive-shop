@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<script defer="" src="js/main.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="О компании — учебный интернет-магазин ShopProject: миссия, ценности, команда." name="description"/>
+<title>О нас — Учебный интернет-магазин</title>
+<link href="css/style.css" rel="stylesheet"/>
+<meta content="website" property="og:type"/>
+<meta content="Учебный интернет-магазин" property="og:title"/>
+<meta content="Учебный frontend-проект интернет-магазина." property="og:description"/>
+<link href="css/responsive.css" rel="stylesheet"/><script defer="True" src="js/navigation.js"></script></head>
+<body><a class="skip-link" href="#main-content">Перейти к содержимому</a><div class="chat-window" hidden="" id="chat-window">
+<div class="chat-window__header">
+<span class="chat-window__title">Чат с магазином</span>
+<button aria-label="Закрыть чат" class="chat-window__close" id="chat-close" type="button">
+        ✕
+      </button>
+</div>
+<div class="chat-window__body">
+<p class="chat-window__message chat-window__message--bot">
+        Здравствуйте! Чем можем помочь?
+      </p>
+<p class="chat-window__message chat-window__message--user">
+        Хочу узнать о доставке.
+      </p>
+<p class="chat-window__message chat-window__message--bot">
+        Доставка по Москве — 1–2 дня, по России — 3–7 дней.
+      </p>
+</div>
+<div class="chat-window__footer">
+<p class="chat-window__note">Это учебный чат. Отправка сообщений не работает.</p>
+</div>
+</div><button aria-label="Открыть чат" class="chat-button" id="chat-toggle" type="button">
+<img alt="" class="chat-button__icon" height="100" loading="lazy" src="images/chat-icon.png" width="100"/>
+</button>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">ForCats</a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true" class="menu-toggle__bars"><span></span><span></span><span></span></span><span class="menu-toggle__text">меню</span></button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li><li class="site-nav__item"><a aria-current="page" class="site-nav__link site-nav__link--active" href="about.html">О нас</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">Главная</a>
+<span class="breadcrumbs__current">О нас</span>
+</nav>
+<section class="section">
+<h1>О нас</h1>
+<p>
+<strong>ForCats</strong> — учебный интернет-магазин, созданный
+        в рамках дисциплины «Фронтенд и бэкенд разработка». Мы делаем
+        многостраничный сайт с каталогом, карточками товаров, формами
+        и понятной навигацией.
+      </p>
+</section>
+<section class="section">
+<h2>Наша миссия</h2>
+<p>
+        Мы хотим показать, что современный сайт — это не только красивый
+        внешний вид, но и понятная структура, доступность, адаптивность
+        и внимание к деталям. Каждая страница проекта — шаг к реальному
+        интернет-магазину.
+      </p>
+</section>
+<section class="section">
+<h2>Что мы делаем</h2>
+<ul>
+<li>разрабатываем многостраничный сайт интернет-магазина;</li>
+<li>продумываем удобную навигацию и структуру страниц;</li>
+<li>оформляем карточки товаров по методологии БЭМ;</li>
+<li>реализуем формы заявок и модальные окна;</li>
+<li>учимся работать с Git, GitHub и Pull Request.</li>
+</ul>
+</section>
+<section class="section">
+<h2>Наши ценности</h2>
+<div class="about-values">
+<article class="about-card">
+<h3 class="about-card__title">Качество</h3>
+<p class="about-card__text">
+            Мы стараемся делать каждую страницу аккуратно: чистая
+            HTML-структура, читаемый CSS, осмысленные классы.
+          </p>
+</article>
+<article class="about-card">
+<h3 class="about-card__title">Доступность</h3>
+<p class="about-card__text">
+            Используем семантические теги, alt-тексты, aria-атрибуты
+            и видимый фокус — чтобы сайт был удобен всем.
+          </p>
+</article>
+<article class="about-card">
+<h3 class="about-card__title">Развитие</h3>
+<p class="about-card__text">
+            Проект растёт от практики к практике: добавляем новые
+            блоки, JS-интерактивность и адаптивную вёрстку.
+          </p>
+</article>
+</div>
+</section>
+<section class="section">
+<h2>Мы в цифрах</h2>
+<ul class="about-stats">
+<li class="about-stats__item">
+<span class="about-stats__value">5</span>
+<span class="about-stats__label">страниц проекта</span>
+</li>
+<li class="about-stats__item">
+<span class="about-stats__value">5</span>
+<span class="about-stats__label">товаров в каталоге</span>
+</li>
+<li class="about-stats__item">
+<span class="about-stats__value">100%</span>
+<span class="about-stats__label">крутости</span>
+</li>
+</ul>
+</section>
+<section class="section">
+<h2>Команда</h2>
+<p>
+        Проект выполняется в рамках учебной дисциплины. Над ним работает
+        студент, осваивающий frontend-разработку: HTML, CSS, JavaScript,
+        Git и командную работу через Pull Request.
+      </p>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<p>© 2026 Учебный проект. Все права защищены.</p>
+<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<script defer="" src="js/main.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Форма заявки учебного интернет-магазина ForCats." name="description"/>
+<title>Заявка — ForCats</title>
+<link href="css/style.css" rel="stylesheet"/>
+<meta content="website" property="og:type"/>
+<meta content="Учебный интернет-магазин" property="og:title"/>
+<meta content="Учебный frontend-проект интернет-магазина." property="og:description"/>
+<link href="css/responsive.css" rel="stylesheet"/><script defer="True" src="js/order.js"></script><script defer="True" src="js/navigation.js"></script></head>
+<body><a class="skip-link" href="#main-content">Перейти к содержимому</a><div class="chat-window" hidden="" id="chat-window">
+<div class="chat-window__header">
+<span class="chat-window__title">Чат с магазином</span>
+<button aria-label="Закрыть чат" class="chat-window__close" id="chat-close" type="button">
+        ✕
+      </button>
+</div>
+<div class="chat-window__body">
+<p class="chat-window__message chat-window__message--bot">
+        Здравствуйте! Чем можем помочь?
+      </p>
+<p class="chat-window__message chat-window__message--user">
+        Хочу узнать о доставке.
+      </p>
+<p class="chat-window__message chat-window__message--bot">
+        Доставка по Москве — 1–2 дня, по России — 3–7 дней.
+      </p>
+</div>
+<div class="chat-window__footer">
+<p class="chat-window__note">Это учебный чат. Отправка сообщений не работает.</p>
+</div>
+</div><button aria-label="Открыть чат" class="chat-button" id="chat-toggle" type="button">
+<img alt="" class="chat-button__icon" height="100" loading="lazy" src="images/chat-icon.png" width="100"/>
+</button>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">ForCats</a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true" class="menu-toggle__bars"><span></span><span></span><span></span></span><span class="menu-toggle__text">меню</span></button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li><li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li><li class="site-nav__item"><a aria-current="page" class="site-nav__link site-nav__link--active" href="order.html">Заявка</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content"><section class="section"><h1>Оформление заявки</h1><p>Заполните форму для связи с магазином ForCats. Это учебная форма, данные не отправляются.</p><form class="order-form order-form--page checkout" id="kr3-order-form" novalidate=""><h2>ваш заказ</h2><div class="checkout__grid"><div class="order-form__field"><label class="order-form__label" for="checkout-product">товар *</label><select class="order-form__select" id="checkout-product" name="product" required=""><option value="">выберите товар</option><option value="400">корм для котят — 400 ₽</option><option value="650">игрушка для кошек — 650 ₽</option><option value="890">лежанка — 890 ₽</option></select></div><div class="order-form__field"><label class="order-form__label" for="checkout-quantity">количество *</label><input class="order-form__input" id="checkout-quantity" max="20" min="1" name="quantity" required="" type="number" value="1"/></div></div><h2>контактные данные</h2><div class="checkout__grid"><div class="order-form__field"><label class="order-form__label" for="customer-name">имя *</label><input autocomplete="name" class="order-form__input" id="customer-name" minlength="2" name="name" placeholder="ваше имя" required=""/></div><div class="order-form__field"><label class="order-form__label" for="customer-email">e-mail *</label><input autocomplete="email" class="order-form__input" id="customer-email" name="email" placeholder="example@mail.ru" required="" type="email"/></div><div class="order-form__field"><label class="order-form__label" for="customer-phone">телефон *</label><input autocomplete="tel" class="order-form__input" id="customer-phone" minlength="10" name="phone" placeholder="+7 900 123-45-67" required="" type="tel"/></div><div class="order-form__field"><label class="order-form__label" for="checkout-delivery">способ получения *</label><select class="order-form__select" id="checkout-delivery" required=""><option value="pickup">самовывоз — бесплатно</option><option value="courier">доставка курьером — 250 ₽</option></select></div></div><div class="order-form__field"><label class="order-form__label" for="customer-comment">комментарий к заказу</label><textarea class="order-form__textarea" id="customer-comment" name="comment" placeholder="пожелания по заказу" rows="3"></textarea></div><div class="promo-box"><h2>есть промокод?</h2><p class="form-note">попробуйте <strong>MEOW10</strong> (−10%) или <strong>KITTY15</strong> (−15%)</p><div class="promo-box__controls"><label class="sr-only" for="promo-code">промокод</label><input autocomplete="off" class="order-form__input" id="promo-code" placeholder="введите промокод"/><button class="button button--secondary" id="apply-promo" type="button">применить</button></div><p aria-live="polite" id="promo-status" role="status"></p></div><div aria-live="polite" class="checkout__total"><div><span>товары</span><strong id="subtotal">0 ₽</strong></div><div><span>скидка</span><strong id="discount">0 ₽</strong></div><div><span>доставка</span><strong id="delivery-price">0 ₽</strong></div><div class="checkout__grand"><span>итого</span><strong id="grand-total">0 ₽</strong></div></div><label class="checkout__agree"><input id="checkout-agree" required="" type="checkbox"/> согласен(на) на обработку данных *</label><div class="order-form__actions"><button class="button button--primary" type="submit">оформить заявку</button></div><p class="form-note">это демонстрационная форма: оплата и отправка заказа не выполняются.</p><p aria-live="polite" id="order-status" role="status"></p></form></section></main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<p>© 2026 Учебный проект. Все права защищены.</p>
+<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+</div>
+</footer>
+</body>
+</html>

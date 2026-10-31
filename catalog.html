@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Каталог товаров учебного интернет-магазина." name="description"/>
+<title>Каталог товаров — Учебный интернет-магазин</title>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+<meta content="website" property="og:type"/>
+<meta content="Учебный интернет-магазин" property="og:title"/>
+<meta content="Учебный frontend-проект интернет-магазина." property="og:description"/>
+<link href="css/responsive.css" rel="stylesheet"/><script defer="True" src="js/navigation.js"></script></head>
+<body><a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">ForCats</a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true" class="menu-toggle__bars"><span></span><span></span><span></span></span><span class="menu-toggle__text">меню</span></button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a aria-current="page" class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li><li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">Главная</a>
+<span class="breadcrumbs__current">Каталог</span>
+</nav>
+<section class="section">
+<h1>Каталог товаров</h1>
+<p>
+        На этой странице представлен учебный каталог товаров.
+        В дальнейшем здесь будут добавлены фильтры, сортировка и более
+        подробные карточки.
+      </p>
+<p>
+ С лицензиями на товар вы можете ознакомиться на странице
+  <a href="about.html"><strong>О нас</strong></a>.
+</p>
+<p> По поводу оказания услуг кинологов позвоните по номеру, указанному на странице
+  <a href="contacts.html"><strong>Контакты</strong></a>.
+      </p>
+</section>
+<section class="catalog-layout">
+<aside class="catalog-filters">
+<h2>Фильтры</h2>
+<form action="#" class="filters-form" method="get">
+<fieldset>
+<legend>Категория</legend>
+<label>
+<input name="category" type="checkbox" value="all"/>
+              Все товары
+            </label>
+<label>
+<input name="category" type="checkbox" value="popular"/>
+              Популярные
+            </label>
+<label>
+<input name="category" type="checkbox" value="new"/>
+              Новинки
+            </label>
+</fieldset>
+<fieldset>
+<legend>Цена</legend>
+<label for="price-from">От</label>
+<input id="price-from" min="0" name="price-from" placeholder="0" type="number"/>
+<label for="price-to">До</label>
+<input id="price-to" min="0" name="price-to" placeholder="5000" type="number"/>
+</fieldset>
+<button class="button button--primary" type="submit">Применить</button>
+</form>
+</aside>
+<div class="catalog-products">
+<h2>Список товаров</h2>
+<div class="products-grid">
+<article class="product-card product-card--featured">
+<span class="product-card__badge">Хит</span>
+<img alt="Корм для взрослых кошек" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo1.jpeg" srcset="images/responsive/photo1-320.webp 320w, images/responsive/photo1-640.webp 640w, images/responsive/photo1-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Корм для взрослых кошек</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 1000 руб.</p>
+<a class="button button--primary product-card__button" href="product.html?product=1">Заказать</a>
+</article>
+<article class="product-card">
+<img alt="Корм для котят" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo2.jpeg" srcset="images/responsive/photo2-320.webp 320w, images/responsive/photo2-640.webp 640w, images/responsive/photo2-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Корм для котят</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 1500 руб.</p>
+<a class="button button--primary product-card__button" href="product.html?product=2">Заказать</a>
+</article>
+<article class="product-card product-card--discount">
+<span class="product-card__badge">Скидка</span>
+<img alt="Когтеточка" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo3.jpeg" srcset="images/responsive/photo3-320.webp 320w, images/responsive/photo3-640.webp 640w, images/responsive/photo3-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Когтеточка</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 2000 руб.</p>
+<a class="button button--primary product-card__button" href="product.html?product=3">Заказать</a>
+</article>
+<article class="product-card">
+<span class="product-card__badge product-card__badge--new">Новинка</span>
+<img alt="Лоток красивый" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo4.jpeg" srcset="images/responsive/photo4-320.webp 320w, images/responsive/photo4-640.webp 640w, images/responsive/photo4-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Лоток красивый</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 2500 руб.</p>
+<a class="button button--primary product-card__button" href="product.html?product=4">Заказать</a>
+</article>
+<article class="product-card product-card--discount">
+<span class="product-card__badge">Скидка</span>
+<img alt="Керамические мисочки" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo5.jpeg" srcset="images/responsive/photo5-320.webp 320w, images/responsive/photo5-640.webp 640w, images/responsive/photo5-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Керамические мисочки</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 3000 руб.</p>
+<a class="button button--primary product-card__button" href="product.html?product=5">Заказать</a>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<p>© 2026 Учебный проект. Все права защищены.</p>
+<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+</div>
+</footer>
+<button aria-label="Открыть чат" class="chat-button" id="chat-toggle" type="button">
+<img alt="" class="chat-button__icon" height="100" loading="lazy" src="images/chat-icon.png" width="100"/>
+</button>
+<div class="chat-window" hidden="" id="chat-window">
+<div class="chat-window__header">
+<span class="chat-window__title">Чат с магазином</span>
+<button aria-label="Закрыть чат" class="chat-window__close" id="chat-close" type="button">✕</button>
+</div>
+<div class="chat-window__body">
+<p class="chat-window__message chat-window__message--bot">Здравствуйте! Чем можем помочь?</p>
+<p class="chat-window__message chat-window__message--user">Хочу узнать о доставке.</p>
+<p class="chat-window__message chat-window__message--bot">Доставка по Москве — 1–2 дня, по России — 3–7 дней.</p>
+</div>
+<div class="chat-window__footer">
+<p class="chat-window__note">Это учебный чат. Отправка сообщений не работает.</p>
+</div>
+</div>
+</body>
+</html>

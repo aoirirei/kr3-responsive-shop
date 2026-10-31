@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ForCats — товары для кошек | Учебный интернет-магазин</title>
+<meta name="description" content="ForCats — учебный интернет-магазин товаров для кошек: корма, когтеточки, лотки и миски. Каталог, характеристики и демонстрационная заявка.">
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+<meta content="website" property="og:type"/>
+<meta content="Учебный интернет-магазин" property="og:title"/>
+<meta content="Учебный frontend-проект интернет-магазина." property="og:description"/>
+<link href="css/responsive.css" rel="stylesheet"/><script defer="True" src="js/navigation.js"></script></head>
+<body><a class="skip-link" href="#main-content">Перейти к содержимому</a><div class="chat-window" hidden="" id="chat-window">
+<div class="chat-window__header">
+<span class="chat-window__title">Чат с магазином</span>
+<button aria-label="Закрыть чат" class="chat-window__close" id="chat-close" type="button">
+        ✕
+      </button>
+</div>
+<div class="chat-window__body">
+<p class="chat-window__message chat-window__message--bot">
+        Здравствуйте! Чем можем помочь?
+      </p>
+<p class="chat-window__message chat-window__message--user">
+        Хочу узнать о доставке.
+      </p>
+<p class="chat-window__message chat-window__message--bot">
+        Доставка по Москве — 1–2 дня, по России — 3–7 дней.
+      </p>
+</div>
+<div class="chat-window__footer">
+<p class="chat-window__note">Это учебный чат. Отправка сообщений не работает.</p>
+</div>
+</div><button aria-label="Открыть чат" class="chat-button" id="chat-toggle" type="button">
+<img alt="" class="chat-button__icon" height="100" loading="lazy" src="images/chat-icon.png" width="100"/>
+</button>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">ForCats</a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true" class="menu-toggle__bars"><span></span><span></span><span></span></span><span class="menu-toggle__text">меню</span></button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation"><ul class="site-nav__list"><li class="site-nav__item"><a aria-current="page" class="site-nav__link site-nav__link--active" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li><li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content">
+<section class="hero">
+<h1>Главная страница магазина ForCats</h1>
+<p>
+        Это многостраничный сайт интернет-магазина, сделанный в рамках дисциплины "Фронтенд разработка". Здесь вы можете 
+        посмотреть на товары для своих пушистиков, но купить не получится. Извините.
+      </p>
+<a class="button button--primary" href="#popular">Перейти к популярным товарам</a>
+</section>
+<section class="section" id="popular">
+<h2>Популярные товары</h2>
+<div class="products-grid">
+<article class="product-card product-card--featured">
+<span class="product-card__badge">Хит</span>
+<img alt="Корм для взрослых кошек" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo1.jpeg" srcset="images/responsive/photo1-320.webp 320w, images/responsive/photo1-640.webp 640w, images/responsive/photo1-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Корм для взрослых кошек</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 1000 руб.</p>
+<button class="button button--primary product-card__button" data-product="Товар 1" type="button">
+        Заказать
+      </button>
+</article>
+<article class="product-card">
+<img alt="Корм для котят" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo2.jpeg" srcset="images/responsive/photo2-320.webp 320w, images/responsive/photo2-640.webp 640w, images/responsive/photo2-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Корм для котят</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 1500 руб.</p>
+<button class="button button--primary product-card__button" data-product="Товар 2" type="button">
+        Заказать
+      </button>
+</article>
+<article class="product-card product-card--discount">
+<span class="product-card__badge">Скидка</span>
+<img alt="Когтеточка" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo3.jpeg" srcset="images/responsive/photo3-320.webp 320w, images/responsive/photo3-640.webp 640w, images/responsive/photo3-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Когтеточка</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 2000 руб.</p>
+<button class="button button--primary product-card__button" data-product="Товар 3" type="button">
+        Заказать
+      </button>
+</article>
+<article class="product-card">
+<span class="product-card__badge product-card__badge--new">Новинка</span>
+<img alt="Лоток красивый" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo4.jpeg" srcset="images/responsive/photo4-320.webp 320w, images/responsive/photo4-640.webp 640w, images/responsive/photo4-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Лоток красивый</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 2500 руб.</p>
+<button class="button button--primary product-card__button" data-product="Товар 4" type="button">
+        Заказать
+      </button>
+</article>
+<article class="product-card product-card--discount">
+<span class="product-card__badge">Скидка</span>
+<img alt="Керамические мисочки" class="product-card__image" decoding="async" height="300" loading="lazy" sizes="(max-width: 479px) calc(100vw - 32px), (max-width: 767px) 44vw, (max-width: 1100px) 33vw, 350px" src="images/photo5.jpeg" srcset="images/responsive/photo5-320.webp 320w, images/responsive/photo5-640.webp 640w, images/responsive/photo5-960.webp 960w" width="400"/>
+<h3 class="product-card__title">Керамические мисочки</h3>
+<p class="product-card__description">Краткое описание учебного товара.</p>
+<p class="product-card__price">Цена: 3000 руб.</p>
+<button class="button button--primary product-card__button" data-product="Товар 5" type="button">
+        Заказать
+      </button>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<p>© 2026 Учебный проект. Все права защищены.</p>
+<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+</div>
+</footer>
+<dialog aria-labelledby="order-dialog-title" class="order-dialog" id="order-dialog">
+<h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+<form action="#" class="order-form" id="order-form" method="post" novalidate="">
+<input id="selected-product" name="selected-product" type="hidden"/>
+<div class="order-form__field">
+<label class="order-form__label" for="order-name">Имя</label>
+<input autocomplete="given-name" class="order-form__input" id="order-name" minlength="2" name="name" placeholder="Введите ваше имя" required="" type="text"/>
+</div>
+<div class="order-form__field">
+<label class="order-form__label" for="order-email">E-mail</label>
+<input autocomplete="email" class="order-form__input" id="order-email" name="email" placeholder="example@mail.ru" required="" type="email"/>
+</div>
+<div class="order-form__field">
+<label class="order-form__label" for="order-phone">Телефон</label>
+<input class="order-form__input" id="order-phone" inputmode="tel" name="phone" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" placeholder="+7 (900) 000-00-00" required="" type="tel"/>
+<small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+</div>
+<div class="order-form__field">
+<label class="order-form__label" for="order-date">Дата связи</label>
+<input class="order-form__input" id="order-date" name="date" type="date"/>
+</div>
+<div class="order-form__field">
+<label class="order-form__label" for="order-topic">Тема заявки</label>
+<select class="order-form__select" id="order-topic" name="topic" required="">
+<option value="">Выберите тему</option>
+<option value="product">Заказ товара</option>
+<option value="consultation">Консультация</option>
+<option value="delivery">Доставка</option>
+</select>
+</div>
+<div class="order-form__field">
+<label class="order-form__label" for="order-comment">Комментарий</label>
+<textarea class="order-form__textarea" id="order-comment" name="comment" placeholder="Укажите дополнительную информацию" rows="4"></textarea>
+</div>
+<div class="order-form__field">
+<label class="order-form__label">
+<input class="order-form__input" id="order-agreement" name="agreement" required="" type="checkbox"/>
+          Я согласен на обработку данных
+        </label>
+</div>
+<div class="order-form__actions">
+<button class="button button--secondary" id="close-order-dialog" type="button">
+          Закрыть
+        </button>
+<button class="button button--primary" type="submit">
+          Отправить заявку
+        </button>
+</div>
+</form>
+</dialog>
+<p class="success-message" hidden="" id="success-message">
+    Форма успешно отправлена!
+  </p>
+</body>
+</html>
